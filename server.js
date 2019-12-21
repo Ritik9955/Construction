@@ -3,6 +3,9 @@ const {db} = require('./db')
 const session = require('express-session') 
 const passport = require('./passport') 
 
+
+const port=process.env.PORT ||4321
+
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
@@ -35,4 +38,13 @@ db.sync({alter:true}).then(()=>{
         console.log('http://localhost:4433')
     })
 })
+db.sync({alter:true}).then(()=>{ 
+    app.listen(port,()=>{
+        console.log('http://localhost:',port)
+    })
+})
+
+// server.listen(port,()=>{
+//     console.log('http://localhost:',port) 
+// })
 
