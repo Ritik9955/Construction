@@ -38,13 +38,13 @@ app.get('/',(req,res)=>{
 //         console.log('http://localhost:4433')
 //     })
 // })
-db.sync({alter:true}).then(()=>{ 
-    app.listen(port,()=>{
-        console.log('http://localhost:',port)
-    })
-})
-
-// server.listen(port,()=>{
-//     console.log('http://localhost:',port) 
+// db.sync({alter:true}).then(()=>{ 
+//     app.listen(port,()=>{
+//         console.log('http://localhost:',port)
+//     })
 // })
+
+server.listen(port,()=>{
+    console.log('http://localhost:',port) 
+})
 
