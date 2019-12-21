@@ -33,11 +33,11 @@ app.get('/',(req,res)=>{
 //     res.redirect('const') 
 // })
 
-db.sync({alter:true}).then(()=>{ 
-    app.listen(4433,()=>{
-        console.log('http://localhost:4433')
-    })
-})
+// db.sync({alter:true}).then(()=>{ 
+//     app.listen(4433,()=>{
+//         console.log('http://localhost:4433')
+//     })
+// })
 db.sync({alter:true}).then(()=>{ 
     app.listen(port,()=>{
         console.log('http://localhost:',port)

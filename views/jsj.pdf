@@ -4,3 +4,14 @@ git commit -m "first commit"
 git remote rm origin
 git remote add origin https://github.com/Ritik9955/knknk.git
 git push -u origin master
+
+
+echo "# Construction" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Ritik9955/Construction.git
+git push -u origin master
+…or push an existing repository from the command line
+git remote add origin https://github.com/Ritik9955/Construction.git
+git push -u origin master
