@@ -1,5 +1,6 @@
 git init
 git add README.md
 git commit -m "first commit"
+git remote rm origin
 git remote add origin https://github.com/Ritik9955/knknk.git
 git push -u origin master
