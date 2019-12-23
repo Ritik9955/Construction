@@ -21,7 +21,7 @@ app.use(passport.session())
 
 app.set('view engine','hbs')
 
-app.use('/const',(require('./routes/const').route))
+app.use('/const',(require('./routes/const2').route))
 app.use('/signup',(require('./routes/signup').route)) 
 app.use('/login',(require('./routes/login').route)) 
 app.use('/profile',(require('./routes/profile').route))  
@@ -38,13 +38,14 @@ app.get('/',(req,res)=>{
 //         console.log('http://localhost:4433')
 //     })
 // })
-// db.sync({alter:true}).then(()=>{ 
-//     app.listen(port,()=>{
-//         console.log('http://localhost:',port)
-//     })
-// })
-
-server.listen(port,()=>{
-    console.log('http://localhost:',port) 
+db.sync({alter:true}).then(()=>{ 
+    app.listen(port,()=>{
+        console.log('http://localhost:',port)
+    })
 })
 
+// app.listen(port,()=>{
+//     console.log('http://localhost:',port) 
+// })
+
+// db.sync({alter:true}.then())
