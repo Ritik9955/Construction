@@ -2,7 +2,9 @@ const route = require('express').Router()
 const passport = require('passport')
 
 route.get('/',(req,res)=>{
-    res.render('const2')
+    res.render('const2');
+
+    // res.use('public')
 })
 
 // route.post('/',

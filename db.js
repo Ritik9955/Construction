@@ -22,6 +22,7 @@ const Users = db.define('user',{
     fbToken:{
         type:Sequelize.TEXT
     }
+    
 
 })
 

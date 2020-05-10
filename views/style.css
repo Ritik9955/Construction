@@ -1,17 +1,38 @@
-#About-deepak{
-    color: blueviolet;
-
-}
-#About-nand{
-    color:red;
+body{
+    background-color: #80623c;
 }
 
-img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px; 
-    width: 150px;  
-    height: 550px;
+#about_us{
+    background:grey;
+
 }
-  
-  
+p{
+    font-family: AnjaliOldLipi;
+}
+#serv_id{
+    text-align: center;
+}
+#serv-card1{
+    padding-left: 100px;
+}
+#serv-card{
+    padding-left: 10px;
+}
+#our_serv{
+    text-align: center;
+    color: black;
+    background-color: #7f805d;
+}
+.our_serv{
+    /*text-align: center;*/
+    padding-left: 20px;
+
+}
+.o_h2{
+    text-align: center;
+    color: #802875;
+}
+.foot5{
+    padding-top: 500px;
+    background-color: red;
+}

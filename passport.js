@@ -5,9 +5,9 @@ const FacebookStratergy = require('passport-facebook').Strategy
 const {Users} = require('./db') 
 
 passport.use(new FacebookStratergy({
-    clientID:'775579259557095',
-    clientSecret:'XXXXXXXXXXXXXXXX',
-    callbackURL:'http://localhost:4433/login/facebook/callback'
+    clientID:'2385975518095772',
+    clientSecret:'d1c95e644ca3db42cefb46ca44407b93',
+    callbackURL:'http://localhost:4321/login/facebook/callback'
 },async function(token,rt,profile,done){
     let user = await Users.findOne({
         where:{username:profile.displayName}
@@ -54,4 +54,4 @@ passport.deserializeUser(
     }
 )
 
-module.exports = passport 
+module.exports = passport
