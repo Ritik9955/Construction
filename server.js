@@ -45,16 +45,3 @@ app.listen(port,()=>{
 
 })
 
-
-//
-//
-//
-// echo "# bhsgy" >> README.md
-// git init
-// git add README.md
-// git commit -m "first commit"
-// git remote add origin https://github.com/Ritik9955/Construction
-//     git push -u origin master
-//
-//
-// https://github.com/Ritik9955/bhsgy.gitaa
